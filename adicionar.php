@@ -22,21 +22,34 @@
                             <a class="button2" href="detalhes.php">Detalhes</a>
                         </li>
                         <li class="click">
-                            <a class="button3" href="adicionar.php">Adicionar Irmã</a>
+                            <a class="button3" href="index.php">Home</a>
                         </li>
                         <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
                     </ul>
                 </div>
-                <div class="cabecalho2">
-                    <h2>Seja Bem vindo!</h2>
-                    <p class="text">Trabalho do curso de Programador Web do SENAC.</p>
-                    <p>O objetivo do Site é parecido com o que nós desenvolvemos na outra aula, ou seja,
-                     ter uma tabela e poder adicionar um novo item, no caso aqui vão ser pessoas e essas pessoas
-                     vão ser as próprias Irmãs Adj.</p>
-                    <p>Quem são as irmãs Adj por sinal?</p>
-                    <p>São personagens fictícias criadas por mim faz bastante tempo, que são personalidades de uma
-                     garota da Terra</p>
-                </div>
+                <form action="./lib/valida.php" method="post">
+        <p>
+            <label> Modelo: </label>
+            <input name="modelo" type="text" id="box_modelo">
+        </p>
+        <p>
+            <label> Marca: </label>
+            <input name="marca" type="text" id="box_marca">
+        </p>
+        <p>
+            <label> Ano: </label>
+            <input name="ano" type="number"  id="box_ano">
+        </p>
+        <p>
+            <label> Preço: </label>
+            <input name="preco" type="number" id="box_preco">
+        </p>
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="button" value="Cancelar" onclick="bt_cancelar()">
+        </p>
+                </form>
+
             </main>
         <footer>
         </footer>
