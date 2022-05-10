@@ -29,7 +29,7 @@
                 </div>
                 <div class="cabecalho2">
                     <h2>Seja Bem vindo!</h2>
-                    <p class="text">Trabalho do curso de Programador Web do SENAC.</p>
+                    <p>Trabalho do curso de Programador Web do SENAC.</p>
                     <p>O objetivo do Site é parecido com o que nós desenvolvemos na outra aula, ou seja,
                      ter uma tabela e poder adicionar um novo item, no caso aqui vão ser pessoas e essas pessoas
                      vão ser as próprias Irmãs Adj.</p>
