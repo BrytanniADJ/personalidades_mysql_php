@@ -24,14 +24,27 @@
                         <li class="click">
                             <a class="button3" href="adicionar.php">Adicionar Irmã</a>
                         </li>
+                        <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
                     </ul>
                 </div>
-                  <section class="cabecalho2">
+                  <div class="cabecalho2">
                       <h2>Seja Bem vindo!</h2>
-                      <!-- nome, nivel, personalidade, habilidade-->
-                  </section>
+                      <h1>
+<br>
+Trabalho do curso de Programador Web do SENAC. <br><br>
+O objetivo do Site é parecido com o que nós desenvolvemos na outra aula, ou seja,
+ ter uma tabela e poder adicionar um novo item, no caso aqui vão ser pessoas e essas pessoas
+ vão ser as próprias Irmãs Adj. <br><br>
+Quem são as irmãs Adj por sinal?<br>
+São personagens fictícias criadas por mim faz bastante tempo, que são personalidades de uma
+ garota da Terra
+                      </h1>
+                  </div>
             </main>
         <footer>
         </footer>
+        <script
+        src="./assests/js/script.js">
+        </script>
     </body>
 </html>

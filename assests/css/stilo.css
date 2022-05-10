@@ -1,35 +1,47 @@
+:root{ /* cor inicial */
+    --body: #81ff94;
+    --modo: #000025;
+    --borda: #4bbf5c;
+    --header: #00d21f;
+    --button1: #228b22;
+    --button2: #32cd32;
+    --button3: #00ff00;
+    --text: #003007;
+}
+
 body{
     font-family: Helvetica;
-    background-color: #009ACD;
-    color: #ffffff;
+    background-color: var(--body);
+    color: var(--text);
 }
 header, footer{
-    background-color: #103279;
+    background-color: var(--header);
     padding: 40px;
 }
 main{
-    background-color: #009ACD;
+    background-color: var(--body);
 }
 .cabecalho{
-    background-color: #27408B;
-    padding: 10px;
-    margin-top: 30px;
-    margin-left: 120px;
-    margin-right: 120px;
+    background-color: var(--borda);
+    width: 300px;
+    height: 467px;
+    margin: 10px;
     border-radius: 20px;
 }
 img{
     max-width: 90px;
 }
+.cabecalho, .cabecalho2{
+    align-items: center;
+    display: inline-grid;
+}
 .cabecalho2{
-    background-color: #3A5FCD;
-    padding-bottom: 20px; /*Mudar aqui com o h2*/
-    margin-top: 30px;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 30px;
+    background-color: var(--body);
+    width: 998px;
+    padding-bottom: 16px;
     border-radius: 20px;
-    border: 5px solid #27408B;
+    border: 5px solid var(--borda);
+    margin: 10px;
 }
 .botao1 , .botao2{
     margin: 20px;
@@ -40,27 +52,38 @@ h2{
     padding-bottom: 25px;
     font-size: 40px;
     text-align: center;
-    background-color: #27408B;
+    background-color: var(--borda);
 }
 .button1{
-    background-color: #6959CD;
+    background-color: var(--button1);
 }
 .button2{
-    background-color: #9370DB;
+    background-color: var(--button2);
 }
 .button3{
-    background-color: #912CEE;
+    background-color: var(--button3);
 }
 .button1 , .button2 , .button3{
     border-radius: 10px;
-    color: #ffffff;
-    padding: 10px 120px;
+    color: var(--text);
+    padding: 20px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 20px 10px;
+    font-size: 30px;
+    margin: 10px 10px;
     cursor: pointer;
+}
+.noturno{
+    font-size: 15px;
+    margin-top: 135px;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--modo);
+    border-color: #ffffff;
 }
 .botoes{
     text-align: center;
@@ -68,12 +91,12 @@ h2{
 .click{
     display: inline-block;
 }
-.entrar{
-    text-align: right;
-    margin-right: 30px;
-    margin-top: 57px;
-}
 button{
-    color: #ffffff;
     background-color: #104E8B;
+}
+h1{
+    font-size: 20px;
+    text-align: right;
+    margin-right: 15px;
+    line-height: 25px;
 }
