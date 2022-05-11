@@ -16,7 +16,7 @@
                 <div class="cabecalho">
                     <ul class="botoes">
                         <li class="click">
-                            <a class="button1" href="lista.php">Personalidades</a>
+                            <a class="button1" href="irmas.php">Personalidades</a>
                         </li>
                         <li class="click">
                             <a class="button2" href="detalhes.php">Detalhes</a>
@@ -29,13 +29,13 @@
                 </div>
                 <div class="cabecalho2">
                     <h2>Seja Bem vindo!</h2>
-                    <p>Trabalho do curso de Programador Web do SENAC.</p>
+                    <p class="inicio">Trabalho do curso de Programador Web do SENAC.</p><br>
                     <p>O objetivo do Site é parecido com o que nós desenvolvemos na outra aula, ou seja,
                      ter uma tabela e poder adicionar um novo item, no caso aqui vão ser pessoas e essas pessoas
-                     vão ser as próprias Irmãs Adj.</p>
+                     vão ser as próprias Irmãs Adj.</p><br>
                     <p>Quem são as irmãs Adj por sinal?</p>
                     <p>São personagens fictícias criadas por mim faz bastante tempo, que são personalidades de uma
-                     garota da Terra</p>
+                     garota da Terra chamada de "Criadora"</p>
                 </div>
             </main>
         <footer>

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./assests/css/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assests/css/stilo.css">
-        <title>Home</title>
+        <title>Adicionar Irmã</title>
     </head>
     <body>
         <header>
@@ -19,7 +19,7 @@
                             <a class="button1" href="lista.php">Personalidades</a>
                         </li>
                         <li class="click">
-                            <a class="button2" href="detalhes.php">Detalhes</a>
+                            <a class="button2" href="irmas.php">Lista Irmãs</a>
                         </li>
                         <li class="click">
                             <a class="button3" href="index.php">Home</a>
@@ -27,29 +27,34 @@
                         <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
                     </ul>
                 </div>
-                <form action="./lib/valida.php" method="post">
-        <p>
-            <label> Modelo: </label>
-            <input name="modelo" type="text" id="box_modelo">
-        </p>
-        <p>
-            <label> Marca: </label>
-            <input name="marca" type="text" id="box_marca">
-        </p>
-        <p>
-            <label> Ano: </label>
-            <input name="ano" type="number"  id="box_ano">
-        </p>
-        <p>
-            <label> Preço: </label>
-            <input name="preco" type="number" id="box_preco">
-        </p>
-        <p>
-            <input type="submit" value="Cadastrar">
-            <input type="button" value="Cancelar" onclick="bt_cancelar()">
-        </p>
-                </form>
-
+                <div class="cabecalho2">
+                    <form action="./lib/valida.php" method="post">
+                        <p class="itens">
+                            <label> Nome: </label>
+                            <input name="nome" type="text" id="box_nome">
+                        </p>
+                        <p class="itens">
+                            <label> Nível: </label>
+                            <select name="nivel" id="box_nivel">
+                              <option value="Escolha uma Opção">Escolha uma Opção</option>
+                              <option value="Primária">Primária</option>
+                              <option value="Secundária">Secundária</option>
+                            </select>
+                        </p>
+                        <p class="itens">
+                            <label> Personalidade: </label>
+                            <input name="persona" type="text" id="box_persona">
+                        </p>
+                        <p class="itens">
+                            <label> Habilidade: </label>
+                            <input name="habili" type="text" id="box_habili">
+                        </p>
+                        <p class="itens">
+                            <input type="submit" value="Cadastrar" id="cadastro">
+                            <input type="button" value="Cancelar" onclick="bt_cancelar()" id="cadastro">
+                        </p>
+                    </form>
+                </div>
             </main>
         <footer>
         </footer>
