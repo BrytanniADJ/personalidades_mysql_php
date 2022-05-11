@@ -32,7 +32,7 @@ use function PHPSTORM_META\type;
         return $lista;
     }
     function cadastraIrma($nome, $nivel, $persona, $habili){
-    $query = "INSERT INTO carros (Nome, Nível, Personalidade, Habilidade)
+    $query = "INSERT INTO irma (Nome, Nível, Personalidade, Habilidade)
     values('" . $nome . "','" . $nivel . "'," . $persona . "," . $habili .");";
     $link = conecta();
     if($link !== NULL){

@@ -32,18 +32,17 @@
                     </ul>
                 </div>
                 <div class="cabecalho2">
-                    <table class="lista">
+                    <table width="1000" border="1px" bgcolor="">
                         <tr>
-                            <th class="cor_sim">Nome</th>
-                            <th class="cor_nao">Nível</th>
-                            <th class="cor_sim">Personalidade</th>
-                            <th class="cor_nao">Habilidade</th>
-                            <th class="cor_sim">Opções</th>
+                            <td width="101" height="40">Nome</td>
+                            <td width="130">Nível</td>
+                            <td width="130">Personalidade</td>
+                            <td>Habilidade</td>
                         </tr>
                         <?php
                             for($i = 0; $i < count($irma); $i++){
                                 if(($i%2) !== 0 ){
-                                    echo '<tr class="cor_nao">';
+                                    echo '<tr>';
                                 }else {
                                     echo '<tr>';
                                 }
@@ -51,10 +50,6 @@
                                     echo '<td>'. $irma[$i]['Nível'] .'</td>';
                                     echo '<td>'. $irma[$i]['Personalidade'] .'</td>';
                                     echo '<td>'. $irma[$i]['Habilidade'] .'</td>';
-                                    echo '<td>
-                                        <button onclick="deletar('.$irma[$i]['id'].')">Deletar</button>
-                                        <button onclick="editar('.$irma[$i]['id'].')">Editar</button>
-                                    </td>';
                                 echo '</tr>';
                             }
                         ?>
