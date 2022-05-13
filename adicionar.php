@@ -22,9 +22,12 @@
                             <a class="button2" href="detalhes.php">Detalhes</a>
                         </li>
                         <li class="click">
-                            <a class="button3" href="index.php">Home</a>
+                            <a class="button3" href="home.php">Home</a>
                         </li>
-                        <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
+                        <li class="click">
+                            <a class="button4" href="index.php">Log-in</a>
+                        </li>
+                        <button class="noturno" onclick="modoNoturno()">Modo Claro</button>
                     </ul>
                 </div>
                 <div class="cabecalho2">

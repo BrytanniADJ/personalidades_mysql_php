@@ -28,7 +28,10 @@
                         <li class="click">
                             <a class="button3" href="adicionar.php">Adicionar Irmã</a>
                         </li>
-                        <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
+                        <li class="click">
+                            <a class="button4" href="index.php">Log-in</a>
+                        </li>
+                        <button class="noturno" onclick="modoNoturno()">Modo Claro</button>
                     </ul>
                 </div>
                 <div class="cabecalho2">

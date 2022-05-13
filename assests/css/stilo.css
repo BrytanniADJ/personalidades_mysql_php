@@ -1,12 +1,13 @@
 :root{ /* cor inicial */
-    --body: #81ff94;
-    --modo: #000025;
-    --borda: #4bbf5c;
-    --header: #00d21f;
-    --button1: #228b22;
-    --button2: #32cd32;
-    --button3: #00ff00;
-    --text: #003007;
+    --body: #2f4380;
+    --modo: #006400;
+    --borda: #3f7b90;
+    --header: #000025;
+    --button1: #000080;
+    --button2: #004a7c;
+    --button3: #191970;
+    --button4: #2e0057;
+    --text: #ffffff;
 }
 
 body{
@@ -63,7 +64,10 @@ h2{
 .button3{
     background-color: var(--button3);
 }
-.button1 , .button2 , .button3{
+.button4{
+    background-color: var(--button4);
+}
+.button1 , .button2 , .button3 , .button4{
     border-radius: 10px;
     color: var(--text);
     padding: 20px 30px;
@@ -71,12 +75,12 @@ h2{
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
-    margin: 10px 10px;
+    margin: 5px 10px;
     cursor: pointer;
 }
 .noturno{
     font-size: 15px;
-    margin-top: 135px;
+    margin-top: 78px;
     border-radius: 10px;
     color: #ffffff;
     padding: 10px 30px;
@@ -128,10 +132,17 @@ p{
     padding-left: 19px;
     padding-right: 19px;
 }
-#cadastro{
+#cadastro, #entrar{
     border-radius: 6px;
     border-color: var(--borda);
     color: var(--borda);
     padding: 5px 10px;
     margin-right: 150px;
+}
+#usuario, #senha{
+    border-radius: 6px;
+    border-color: var(--borda);
+    background-color: var(--header);
+    color: var(--text);
+    text-align: left;
 }

@@ -1,3 +1,12 @@
+<?php
+    include './lib/login.php';
+
+    if(isset($_POST['usuario']) && isset($_POST['password'])){
+        $usuario= htmlspecialchars($_POST['usuario']);
+        $password= md5(htmlspecialchars($_POST['password']));
+        login($usuario, $password);
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -7,7 +16,7 @@
         <link rel="stylesheet" href="./assests/css/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assests/css/stilo.css">
-        <title>Home</title>
+        <title>Log-in</title>
     </head>
     <body>
         <header>
@@ -16,26 +25,40 @@
                 <div class="cabecalho">
                     <ul class="botoes">
                         <li class="click">
-                            <a class="button1" href="irmas.php">Personalidades</a>
+                            <a class="button1" href="index.php">Personalidades</a>
                         </li>
                         <li class="click">
-                            <a class="button2" href="detalhes.php">Detalhes</a>
+                            <a class="button2" href="index.php">Detalhes</a>
                         </li>
                         <li class="click">
-                            <a class="button3" href="adicionar.php">Adicionar Irmã</a>
+                            <a class="button3" href="index.php">Adicionar Irmã</a>
                         </li>
-                        <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
+                        <li class="click">
+                            <a class="button4" href="index.php">Log-in</a>
+                        </li>
+                        <button class="noturno" onclick="modoNoturno()">Modo Claro</button>
                     </ul>
                 </div>
                 <div class="cabecalho2">
-                    <h2>Seja Bem vindo!</h2>
-                    <p class="inicio">Trabalho do curso de Programador Web do SENAC.</p><br>
-                    <p>O objetivo do Site é parecido com o que nós desenvolvemos na outra aula, ou seja,
-                     ter uma tabela e poder adicionar um novo item, no caso aqui vão ser pessoas e essas pessoas
-                     vão ser as próprias Irmãs Adj.</p><br>
-                    <p>Quem são as irmãs Adj por sinal?</p>
-                    <p>São personagens fictícias criadas por mim faz bastante tempo, que são personalidades de uma
-                     garota da Terra chamada de "Criadora"</p>
+                    <h2>Log-In</h2>
+                    <form action="index.php" method="post">
+                        <p class="itens">
+                            <label for="">Usuário</label>
+                            <input type="text" name="usuario" id="usuario" placeholder = "Nome de Usuário" required>
+                        </p>
+                        <p class="itens">
+                            <label for="">Senha</label>
+                            <input type="password" name="password" id="senha" placeholder = "Senha" required>
+                        </p>
+                        <p class="itens">
+                            <input type="submit" id="entrar"></input>
+                        </p>
+                        <?php
+                            if(isset($_GET['login']) && $_GET['login']==='erro'){
+                                echo "<p>Login ou senha incorretos</p>";
+                            }
+                        ?>
+                    </form>
                 </div>
             </main>
         <footer>
