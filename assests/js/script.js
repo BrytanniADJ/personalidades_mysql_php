@@ -14,7 +14,7 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--button3', '#00ff00');
         document.documentElement.style.setProperty('--button4', '#07ab1f');
         document.documentElement.style.setProperty('--text', '#003007');
-          document.querySelector(".noturno").innerHTML ="Modo Escuro";
+        document.querySelector(".noturno").innerHTML ="Modo Escuro";
     }else{
         document.documentElement.style.setProperty('--body', '#2f4380'); /* Modo escuro*/
         document.documentElement.style.setProperty('--modo', '#006400');
@@ -25,7 +25,7 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--button3', '#191970');
         document.documentElement.style.setProperty('--button4', '#2e0057');
         document.documentElement.style.setProperty('--text', '#ffffff');
-          document.querySelector(".noturno").innerHTML ="Modo Claro";
+        document.querySelector(".noturno").innerHTML ="Modo Claro";
     }
 }
 
